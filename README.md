@@ -54,7 +54,22 @@ https://www.udemy.com/course/python-pcep
         * never divide by zero (ZeroDivisionError)
     * powers/exponents **
 * extra: how does modulo work?
-    
+* assigning values
+    * can multiple strings, never knew
+* input() function
+    * always returns a string type
+* technical theory
+    * translate from source to machine code
+    * compilation or interpretation
+        * comp = executable file (compile once)
+        * inter = runs on the fly (this is Python)
+            * "scripting language"
+    * py executes top to bottom
+        * lexis, syntax, semantics
+            * lexis = reserved terms in Python
+            * syntax
+            * semantics
+(Passed post module test, 14/15.)
 
 ## module 2: data types, evals, basic i/o
 
