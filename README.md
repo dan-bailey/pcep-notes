@@ -72,8 +72,51 @@ https://www.udemy.com/course/python-pcep
 (Passed post module test, 14/15.)
 
 ## module 2: data types, evals, basic i/o
+* typecasting
+    * changing variable types
+* more re: operators
+    * binary operators (require two values), ```+ - * / // %```
+    * unary operators for making positive/negative
+* order of operations
+    * PEMDAS
+* floating point accuracy
+    * floats are more-or-less right, but not 100%
+    * precision is limited
+* exponents and order of operations:
+    * without parenthesis, it starts from the right and goes to the left
+    * thus ```2 ** 3 ** 4``` is the same as ```2 ** (3 ** 4)```
+* more print and strings
+    * covering ```len()```
+    * kwargs (keyword args)
+        * end can be used to redefine an endline character
+        * sep argument is used to redefine spacing between strings in a print
+* bit operators
+    * probably shouldn't be in PCEP; but it is
+    * operators: ```& | ~ ^ << >>```
+        * & and
+        * | or
+        * ^ xor
+        * ~ not
+        * << >> shift bit
+        * << 1 = double
+        * << 2 = four
+        * >> 1 = half
+        * >> 2 = quarter
+    * how to convert binary to decimal
 
 ## module 3: control flow, conditionals, loops
+* if statements
+    if else elif (else if)
+    
+* logical operators and conditions
+
+* joining multiple conditions
+* nested if statements
+* while loops
+* for loops
+* break and continue
+* other loop features
+
 
 ## module 4: data collections
 
