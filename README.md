@@ -107,16 +107,30 @@ https://www.udemy.com/course/python-pcep
 ## module 3: control flow, conditionals, loops
 * if statements
     if else elif (else if)
-    
 * logical operators and conditions
-
+    * < > <= >= == !=
 * joining multiple conditions
+    * ```and or not```
+    * priority: not, and, or
 * nested if statements
+    * easy easy (no notes)
 * while loops
+    * easy easy (no notes)
+    * used for unknown number of steps
 * for loops
+    * used for a known number of steps
+    * no conditionals
+    * easy easy (no notes)
 * break and continue
+    * break is for exiting a loop
+    * great for getting out of a shitty while loop
+    * continue is good for skipping back to the conditional
 * other loop features
-
+    * pass requires instruction in a loop; it can be used as a placeholder so code doesn't throw errors (works in loops and if/else logic)
+    * nested loops, easy
+    * loops with else (seldom used/rare)
+        * else always get executed after a loop finishes
+    
 
 ## module 4: data collections
 
