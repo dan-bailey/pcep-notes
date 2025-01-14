@@ -131,8 +131,54 @@ https://www.udemy.com/course/python-pcep
     * loops with else (seldom used/rare)
         * else always get executed after a loop finishes
     
-
 ## module 4: data collections
+* intro to lists
+    * they're arrays, duh
+    * indexing is the same
+    * i am annoyed by the terminology change
+    * slicing
+        * ```top_cities[0:2]```
+        * returns the first two items in the list, first val is starting point, second val is the point where you don't share, i.e.: end here, but don't display.
+        * ```top_cities[2:]``` means start at element 2 (the third element) and continue through the remainder of the list
+        * ```top_cities[:3]``` start at the beginning and go through until index 3, but don't show index 3
+* deleting list elements
+    * ```del``` deletes -- use as: ```del top_cities[2]```
+    * elements nuked this way have their space filled-in as all following items in the list are shifted left
+    * can use slicing to remove in a similar methodology
+    * ```del top_cities[3:]``` removes everything from index 3 onward
+* adding lists elements
+    * use ```.append()``` method to add to the end of the list
+    * use ```.insert(x, y)``` method to insert value y at location x in the list
+* iterating lists
+    * ```for item in list_name:``` you lose index value here, though
+    * ```for idx in range(len(top_cities):``` then index each item by idx like ```top_cities[idx]```
+* changing element positions
+    * doesn't require a temp in python
+    * just do ```var_1, var_2 = var_2, var_1```
+    * applies to lists with an index, just the same way
+    * ```.sort()``` method destroys original
+    * as a temporary function, you can use ```sorted(list_name)``` to output results similar to .sort() without impacting the original list
+* checking element presence
+    * ```if val in list_name:```
+    * ```if val not it list_name:```
+* copying lists
+    * if you have list_1 and do: ```list_2 = list_1``` you're making a copy of a reference to the list, so changing element[0] changes it in both
+    * if you use slicing you get two unique lists where memory is concerned -- do ```list_2 = list_1[:]
+    * also use slicing to copy a fragment of the original into the new list
+* list comprehension
+    * ```numbers = [i for i in range(1,101)]```
+    * ```numbers = [i for i in range(1,100) if i % 3 != 0]```
+* nested lists
+    * ```test = [['A1', 'A2', 'A3'], [['B1', 'B2', 'B3']]```
+    * ```test[0] == ['A1', 'A2', 'A3']```
+    * ```test[0][2] == 'A3'```
+* adding and multiplying lists
+* further string features
+* intro to tuples
+    * tuple operations
+    * tuples in lists, lists in tuples
+* intro to dictionaries
+    * dictionary operations
 
 ## module 5: functions and exceptions
 
