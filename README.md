@@ -173,12 +173,49 @@ https://www.udemy.com/course/python-pcep
     * ```test[0] == ['A1', 'A2', 'A3']```
     * ```test[0][2] == 'A3'```
 * adding and multiplying lists
+    * joining lists same as adding, list_1 + list_2
+    * multiplying ```list = [0, 1] * 10``` results in 0, 1 being repeated ten times
 * further string features
+    * strings are a list of characters
+    * you can slice
+    * you cannot change characters using this methods
+    * strings don't have list methods
+    * reference manual for string methods on python.org
 * intro to tuples
-    * tuple operations
-    * tuples in lists, lists in tuples
+    * collections of elements of varying data types
+    * defined by ()
+    * need commas even after the first solo element to define it as a tuple
+    * diff:
+        * immutable: once the list is built it's permanent, can't be changed
+        * can be replaced outright, but doesn't have .append(), etc.  Doesn't have del.
+* tuple operations
+    * len
+    * if-in
+    * iteration with for loop
+    * can be added to with + or *
+    * use lists for vals of same type
+    * use tuples for different types but have a group meaning or structure
+* tuples in lists, lists in tuples
+    * same as working with nested lists, basically
+    * tuples containing mutable elements can have the mutable element modified
 * intro to dictionaries
-    * dictionary operations
+    * key-value pairs like JSON
+    * 'key': 'value',
+    * 'otherkey': 37,
+    * dictionaries are one-way, you can only look up by key, not by content
+    * keys can only be immutable types, keys cannot be lists
+* dictionary operations
+    * can be created with {}
+    * add/update a key value pair like grades['dan'] = 'A+'
+    * len for num of keys
+    * if-in for key value finding
+    * del to delete a key value pair
+    * dictionaries were unordered before 3.6
+    * iterating
+        * for loop gives you access to the keys
+        * use .values() method to get vals
+        * ```for person, grade in grades.items():```
+            * gets keys as person, values as grade
 
 ## module 5: functions and exceptions
 
