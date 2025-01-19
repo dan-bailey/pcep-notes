@@ -218,4 +218,80 @@ https://www.udemy.com/course/python-pcep
             * gets keys as person, values as grade
 
 ## module 5: functions and exceptions
+* intro to writing functions
+    * naming important
+    * reusable code bit
+    * ```def function_name():```
+    * cannot invoke function before it has been defined
+* functions with parameters
+    * all arguments must be invoked, and with the right data type
+    * functions can have multiple params
+    * "positional arguments", most-freq used in py
+    * keyword arguments (kwargs)
+* default parameter values
+    * ```def do_shit(text, letter='a')```
+    * if no second param, it defaults to ```a```
+* name scopes
+    * variables defined outside a function are available inside the function
+    * shadowing = can't change a var inside a function and have it show up globally (in the function its a local version of a global)
+    * add ```global``` before a var assignment in a functiona and it will change the global value
+    * using the .append() method on a global variable inside a function, it will update the global (applied to mutables, not tuples)
+* the None value
+    * null value
+    * not 0, not false, it is only None
+* the return keyword  
+* recursion
+    * py supports recursion
+    * a function can call itself
+    * factorials is a good example
+        * for loop = iterative
+        * return the number * the function(number - 1)
+        * needs a stop condition for recusion
+        * return when factorial value <= 1, return 1
+* generators
+    * ```yield``` keyword
+    * use ```next``` to iterate by one
+    * can use ```list``` to make a list of numbers from generator
+* intro to exceptions
+    * how to read error messages
+    * exceptions
+    * ```try:``` and ```except```
+    * can have multiple exception catches
+* can you catch syntax errors?
+    * as long as it is not in the ```try``` block
+* exception hierarchy
+    * 60 built in types, but have understanding
+    * BaseException (template for specific types)
+        * Exception
+            * ArithmeticError
+                * ZeroDivisionError
+            * LookupError
+                * IndexError
+                * KeyError
+                * (lists and dictionaries)
+            * TypeError
+                * trying to do things with incompatible data types
+            * ValueError
+                * type is correct, but the value isn't
+        * SystemExit
+            * sys.exit to terminate program
+        * KeyboardInterrupt
+    * py will try to be extremely specific
+    * (find chart)
+* propogating exceptions
+    * when functions call each other
+    * exceptions are propogated through functions
+* assertion exceptions
+    * ```assert```
+    * assert (number != 0), 'Got 0 as a number.'
+    * used for finding bugs, not error-trapping in logic
+    
 
+## study list:
+* bitwise operations
+* slicing
+* multiplying and adding lists
+* generators (read up on these)
+* try/except 
+* exceptions
+* assertions
